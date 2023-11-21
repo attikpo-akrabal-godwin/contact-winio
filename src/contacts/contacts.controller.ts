@@ -13,7 +13,6 @@ import { ContactsService } from './contacts.service';
 import { CreateContactDto } from './dto/create-contact.dto';
 import { ApiResponse } from '@nestjs/swagger';
 
-
 @Controller('contacts')
 export class ContactsController {
   constructor(

@@ -14,7 +14,7 @@ export class ContactsService {
     return contact;
   }
   deleteOne(id: string): Promise<Contact> {
-    return this.contactModel.findByIdAndDelete(id);
+    return this.contactModel.findByIdAndDelete(id).exec();
   }
   updateOne(id: string, createContactDto: CreateContactDto): Promise<Contact> {
     return this.contactModel.findByIdAndUpdate(id, createContactDto, {
